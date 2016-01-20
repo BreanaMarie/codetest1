@@ -1,2 +1,19 @@
-<h1>Attendees#new</h1>
-<p>Find me in app/views/attendees/new.html.erb</p>
+<section class='intro new'>
+  <div class="col-sm-8 col-sm-offset-2 well">
+  <h2>Become a member of a Practice Group:</h2>
+  <br>
+    <%= form_for @attendee do |a| %>
+      <%= a.label "First Name" %> </br>
+          <%= a.text_field :first_name, placeholder: "first name", class:'form-control' %>
+          <br>
+          <%= a.label "Last Name" %> 
+          <%= a.text_field :last_name, placeholder: "last name", class:'form-control' %>
+          <br>
+          <%= a.label "Whats your passions" %> 
+          <%= a.text_area :passion, rows:10, placeholder: "what kinds of things get you excited", class:'form-control' %> 
+          <br> 
+        <%= a.submit "Create Talk", class:"btn btn-success pull-right" %>
+
+    <% end %>
+  </div>
+</section>
