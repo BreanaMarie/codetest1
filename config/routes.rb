@@ -4,5 +4,6 @@ Rails.application.routes.draw do
 
   resources :talks
   resources :attendees
+  resources :attendances
 
 end
