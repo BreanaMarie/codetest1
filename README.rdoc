@@ -4,13 +4,18 @@ This application is built for a coding challenge that focuses on the backend.  I
 What you will see when you open this app is a simplistic design that allows for movement between the resources, there is minimal effort placed on UX due to time constrains.  
 
 the stack 
-Ruby on Rails
+Ruby on Rails - selected due to ease of getting up and running under tight time deadlines, and no other technology was suggested for this challenge
 
 database:
-postgres
+postgres - workes seamlessly with rails
 
-Resources :
-	Talk: this is the resources that keeps track of the event that the attendees can attend.
-	attendees: the individuals that will attend, or users of the site
-	attendance: the joint table that connects attendees to talks
+Resources : (attributes were determined based on the JSON information provieded)
+	-Talk: this is the resources that keeps track of the events that the attendees can attend.
+		- attributes include Title, Host, Date and Description
+
+	-Attendees: the individuals that will attend, or users of the site
+		- attributes include First Name, Last Name, Passion
+
+	-Attendance: the joint table that connects attendees to talks
+		- attributes include talk_id, attendee_id
 
