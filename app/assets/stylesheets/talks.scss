@@ -1,0 +1,18 @@
+#splash{
+	font-family: 'Crimson Text', serif;
+	background-image: url("mic.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-image: center;
+	color: #fff;
+	margin-top: 20vh;
+	height: 95vh;	
+}
+
+#splash h1{
+	font-size: 25vh;
+}

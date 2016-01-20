@@ -1,28 +1,16 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is built for a coding challenge that focuses on the backend.  It demonstrates the use of REST conventions through three different resources : talk, attendee and attendance to talk.  
+What you will see when you open this app is a simplistic design that allows for movement between the resources, there is minimal effort placed on UX due to time constrains.  
 
-Things you may want to cover:
+the stack 
+Ruby on Rails
 
-* Ruby version
+database:
+postgres
 
-* System dependencies
+Resources :
+	Talk: this is the resources that keeps track of the event that the attendees can attend.
+	attendees: the individuals that will attend, or users of the site
+	attendance: the joint table that connects attendees to talks
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
