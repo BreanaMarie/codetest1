@@ -1,0 +1,41 @@
+
+<div id="splash">
+  <h1>We Talk</h1>
+  <h2>We talk about everything! 
+  <br>
+  Hear what we have to say and attend a talk</h2>
+</div>
+
+<div id="alltalks" class="container">
+  <h1>Here is a list of all the current talks</h1>
+   <table style="width:100%">
+     <tr>
+       <td>Title</td>
+       <td>Host</td> 
+       <td>Date</td>
+       <td>Description</td>
+       <td>Number of Attendees</td>
+     </tr>
+     <% @talks.each do |t| %>
+
+     <tr>
+       <td>
+         <%= link_to "#{t.title}", title_path(t.id)%>  
+       </td>
+       <td>      
+         <%= t.host %> 
+       </td>
+       <td>
+         <%= t.date %> 
+       </td> 
+       <td>
+         <%= t.description %>
+       </td>
+       <td>
+         <%= Attendees.where(:talk_id => talk).count %>
+       </td>
+     </tr>
+     
+   <% end %>
+  </table>
+</div>
