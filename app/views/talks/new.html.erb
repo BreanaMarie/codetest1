@@ -1,2 +1,22 @@
-<h1>Talks#new</h1>
-<p>Find me in app/views/talks/new.html.erb</p>
+<section class='intro new'>
+  <div class="col-sm-8 col-sm-offset-2 well">
+  <h2>Become a member of a Practice Group:</h2>
+  <br>
+    <%= form_for @talk do |t| %>
+      <%= t.label "Create a Talk" %> </br>
+          <%= t.text_field :title, placeholder: "your talk's title", class:'form-control' %>
+          <br>
+          <%= t.label "The Host" %> 
+          <%= t.text_field :host, placeholder: "the primary speaker", class:'form-control' %>
+          <br>
+          <%= t.label "pick a date for talk" %> 
+          <%= t.date_select :date, class:'form-control' %> 
+          <br> 
+          <%= t.label "Whats the talk on?" %> 
+          <%= t.text_area :description, rows:10, placeholder: "brief summary of your talks highlights", class:'form-control' %> 
+          <br> 
+        <%= t.submit "Create Talk", class:"btn btn-success pull-right" %>
+
+    <% end %>
+  </div>
+</section>

@@ -4,7 +4,7 @@ class CreateTalks < ActiveRecord::Migration
       t.string :title
       t.string :host
       t.datetime :date
-      t.string :description
+      t.text :description
 
       t.timestamps null: false
     end

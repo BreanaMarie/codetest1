@@ -3,13 +3,13 @@
 	background-image: url("mic.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// -o-background-size: cover;
 	background-size: cover;
-	background-image: center;
+	background-image: top;
 	color: #fff;
-	margin-top: 20vh;
+	padding-top: 20vh;
 	height: 100vh;	
 }
 
@@ -18,5 +18,6 @@
 }
 
 #alltalks{
+	min-height: 60vh;
 
 }
