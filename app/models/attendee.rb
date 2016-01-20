@@ -1,4 +1,4 @@
 class Attendee < ActiveRecord::Base
-  has_many :attendences
-  has_many :talks, :through => :attendences
+  has_many :attendances
+  has_many :talks, :through => :attendances
 end
