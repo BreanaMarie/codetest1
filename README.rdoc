@@ -25,4 +25,7 @@ The front page shows a table of all the current talks, the talk's information, a
 
 Attendance is created at the same time Attendee is created.  In order to not have to deal with sessions and cookies, given the scope of this challenge I opted to create froms that could grab the id's from one record that is created and use that id to create another record at the same time.  This ment using drop down menues and an additional function on the controller called "create_attend".  The way this works is when attendee is saved after the submit, an if statement is triggered and create_attend is called and passed the id from the attendee that was just created and the talk.id that was used in the form.  
 
- 
+Given more time:
+I would add a navigation bar to make it easier to move around the site and see the code
+I would fix the create attendee form to also create the attendance record as well
+repair the where function on the talks index page to just call the instance of the talk 
