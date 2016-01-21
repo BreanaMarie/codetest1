@@ -1,6 +1,6 @@
 <section class='intro new'>
   <div class="col-sm-8 col-sm-offset-2 well">
-  <h2>Become a member of a Practice Group:</h2>
+  <h2>Sign up to Attend:</h2>
   <br>
     <%= form_for @attendee do |a| %>
       <%= a.label "First Name" %> </br>
@@ -12,6 +12,10 @@
           <%= a.label "Whats your passions" %> 
           <%= a.text_area :passion, rows:10, placeholder: "what kinds of things get you excited", class:'form-control' %> 
           <br> 
+          <%= fields_for (@attendances) do | j | %>
+          <%= j.collection_select :talk_id, @talks, :id, :title, {prompt: "Select a Group"}, {class: 'collection'}  %>
+          <br>
+          <%end%>
         <%= a.submit "Create Talk", class:"btn btn-success pull-right" %>
 
     <% end %>

@@ -19,3 +19,10 @@ Resources : (attributes were determined based on the JSON information provieded)
 	-Attendance: the joint table that connects attendees to talks
 		- attributes include talk_id, attendee_id
 
+
+Features
+The front page shows a table of all the current talks, the talk's information, and a count of how many attendees there are signed up for the talk based on the joint table attendance.
+
+Attendance is created at the same time Attendee is created.  In order to not have to deal with sessions and cookies, given the scope of this challenge I opted to create froms that could grab the id's from one record that is created and use that id to create another record at the same time.  This ment using drop down menues and an additional function on the controller called "create_attend".  The way this works is when attendee is saved after the submit, an if statement is triggered and create_attend is called and passed the id from the attendee that was just created and the talk.id that was used in the form.  
+
+ 

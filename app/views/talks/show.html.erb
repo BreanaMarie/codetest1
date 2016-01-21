@@ -1,2 +1,11 @@
-<h1>Talks#show</h1>
-<p>Find me in app/views/talks/show.html.erb</p>
+<h1><%="#{@talk.title}" %></h1>
+<p><%= @talk.description %></p>
+
+
+<h3>Others who are attending this event already:</h3>
+
+<% @talk.attendances.each do | name | %>
+  <% name = Attendee.find(name.attendee_id) %>
+  <%= name.first_name%> <%=name.last_name%>
+  <br>
+  <% end %>
